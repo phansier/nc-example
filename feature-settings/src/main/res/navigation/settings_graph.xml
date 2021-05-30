@@ -23,12 +23,14 @@
             app:destination="@id/settingsFlowThirdFragment" />
         <action
             android:id="@+id/action_settingsFlowSecondFragment_to_buy_flow_graph"
-            app:destination="@+id/buy_flow_graph">
-            <argument
+            app:destination="@+id/buy_flow_navigation">
+            <!--<argument
                 android:name="popToDestinationId"
-                app:argType="integer" />
+                app:argType="integer" />-->
         </action>
     </fragment>
+
+    <include app:graph="@navigation/buy_flow_graph" />
     <fragment
         android:id="@+id/settingsFlowThirdFragment"
         android:name="com.example.feature_settings.SettingsFlowThirdFragment"

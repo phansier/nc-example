@@ -21,14 +21,13 @@
         android:id="@+id/mainHostFragment"
         android:name="com.example.nctest.MainHostFragment"
         android:label="MainHostFragment"
-        tools:layout="@layout/fragment_main_host" />
+        tools:layout="@layout/fragment_main_host" >
 
+        <action
+            android:id="@+id/action_global_buy_flow_navigation"
+            app:destination="@id/buy_flow_navigation" />
+    </fragment>
 
     <include app:graph="@navigation/buy_flow_graph" />
-
-    <action
-        android:id="@+id/action_global_buy_flow_navigation"
-        app:destination="@id/buy_flow_navigation" />
-
 
 </navigation>

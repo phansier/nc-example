@@ -16,7 +16,7 @@ class FrwCompleteFragment : BaseFragment(R.layout.fragment_frw_complete) {
                 visibility = View.VISIBLE
                 setOnClickListener {
                     Navigation.findNavController(requireActivity(), R.id.host_global)
-                        .navigate(R.id.action_frwCompleteFragment_to_mainFragment)
+                        .navigate(FrwSecondStepFragmentDirections.actionFrwSecondStepFragmentToFrwThirdStepFragment())
                 }
             }
         }

@@ -16,7 +16,7 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         }
         view.findViewById<Button>(R.id.buy_button).setOnClickListener {
             Navigation.findNavController(requireActivity(), R.id.host_global)
-                .navigate(R.id.action_global_buy_flow_navigation)
+                .navigate(MainHostFragmentDirections.actionGlobalBuyFlowNavigation())
         }
     }
 }

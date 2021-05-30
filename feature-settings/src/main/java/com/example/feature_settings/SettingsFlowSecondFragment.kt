@@ -25,7 +25,7 @@ class SettingsFlowSecondFragment : BaseFragment(R.layout.fragment_settings_flow_
         }
         view.findViewById<Button>(R.id.buy_button).setOnClickListener {
             Navigation.findNavController(requireActivity(), R.id.host_global)
-                .navigate(R.id.action_global_buy_flow_navigation)
+                .navigate(SettingsFlowSecondFragmentDirections.actionSettingsFlowSecondFragmentToBuyFlowGraph())
         }
         toolbar = view.findViewById(R.id.toolbar)
     }

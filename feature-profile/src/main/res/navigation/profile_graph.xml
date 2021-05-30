@@ -9,11 +9,12 @@
         android:id="@+id/profileFragment"
         android:name="com.example.profile.ProfileFragment"
         android:label="ProfileFragment"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_login_flow"
+            app:destination="@+id/login_graph" />
+    </fragment>
 
     <include app:graph="@navigation/login_graph" />
 
-    <action
-        android:id="@+id/action_login_flow"
-        app:destination="@+id/login_graph" />
 </navigation>

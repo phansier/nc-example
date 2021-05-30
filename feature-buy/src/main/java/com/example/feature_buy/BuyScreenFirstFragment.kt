@@ -18,7 +18,7 @@ class BuyScreenFirstFragment : BaseFragment(R.layout.fragment_buy_screen_first) 
         toolbar = view.findViewById(R.id.toolbar)
         view.findViewById<Button>(R.id.next_button).setOnClickListener {
             findNavController()
-                .navigate(R.id.action_buyScreenFirstFragment_to_buyScreenSecondFragment)
+                .navigate(BuyScreenFirstFragmentDirections.actionBuyScreenFirstFragmentToBuyScreenSecondFragment())
         }
     }
 
